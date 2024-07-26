@@ -1,1 +1,58 @@
-<p>login-page works!</p>
+<div class="login">
+  <div class="login__container">
+    <div class="login__logo-container">
+      <img
+        src="../../../assets/images/Logo.png
+        "
+        alt="Logo do Navega"
+        class="login__logo-container-image"
+      />
+    </div>
+    <form action="" class="login__form">
+      <div class="login__form__instructions">
+        <h2 class="login__form__instructions-main-text">
+          Boas-vindas ao Portal! Para começar, qual seu email ou CPF?
+        </h2>
+        <p class="login__form__instructions-auxiliary-text">
+          Precisamos desta confirmação para dar início ao seu acesso.
+        </p>
+      </div>
+      <span class="p-float-label custom-input p-input-icon-right">
+        <i class="pi pi-circle custom-input__icon"></i>
+        <input
+          pInputText
+          id="userId"
+          name="userId"
+          class="custom-input__input"
+          [(ngModel)]="userId"
+        />
+        <label htmlFor="userId" class="custom-input__label"
+          >E-mail ou CPF</label
+        >
+      </span>
+      <span class="p-float-label custom-input">
+        <p-password
+          [(ngModel)]="userPassword"
+          [toggleMask]="true"
+          id="userPassword"
+          name="userPassword"
+          class="custom-input__input"
+        ></p-password>
+        <label htmlFor="userPassword" class="custom-input__label">Senha</label>
+      </span>
+      <div class="button-container">
+        <button pButton class="primary-button">Acessar</button>
+      </div>
+      <p class="forgot-password-container">
+        <span>Esqueceu a senha?</span>
+        <span
+          ><p-button [link]="true" class="primary-link"
+            >Acesse aqui</p-button
+          ></span
+        >
+      </p>
+    </form>
+    <div class="app-version">Versão 0.01</div>
+  </div>
+  <div class="login__image"></div>
+</div>
