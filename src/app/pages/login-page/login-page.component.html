@@ -8,15 +8,15 @@
         class="login__logo-container-image"
       />
     </div>
-    <div class="login__instructions">
-      <h2 class="login__instructions-main-text">
-        Boas-vindas ao Portal! Para começar, qual seu email ou CPF?
-      </h2>
-      <p class="login__instructions-auxiliary-text">
-        Precisamos desta confirmação para dar início ao seu acesso.
-      </p>
-    </div>
     <form action="" class="login__form">
+      <div class="login__form__instructions">
+        <h2 class="login__form__instructions-main-text">
+          Boas-vindas ao Portal! Para começar, qual seu email ou CPF?
+        </h2>
+        <p class="login__form__instructions-auxiliary-text">
+          Precisamos desta confirmação para dar início ao seu acesso.
+        </p>
+      </div>
       <span class="p-float-label custom-input p-input-icon-right">
         <i class="pi pi-circle custom-input__icon"></i>
         <input
@@ -43,15 +43,16 @@
       <div class="button-container">
         <button pButton class="primary-button">Acessar</button>
       </div>
+      <p class="forgot-password-container">
+        <span>Esqueceu a senha?</span>
+        <span
+          ><p-button [link]="true" class="primary-link"
+            >Acesse aqui</p-button
+          ></span
+        >
+      </p>
     </form>
-    <p class="forgot-password-container">
-      <span>Esqueceu a senha?</span>
-      <span
-        ><p-button [link]="true" class="primary-link"
-          >Acesse aqui</p-button
-        ></span
-      >
-    </p>
     <div class="app-version">Versão 0.01</div>
   </div>
+  <div class="login__image"></div>
 </div>

@@ -1,17 +1,28 @@
 @import "../../../styles/_variables.less";
+@import "../../../styles/_mixins.less";
 
 .login {
   display: flex;
-  flex-direction: column;
   color: @gray-90;
+  max-height: 100vh;
 
   &__container {
     width: 100%;
-    max-width: 400px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .min-responsive(@medium, {
+      max-width: 350px;
+    });
+
+    .min-responsive(@extra-large, {
+      max-width: 500px;
+    });
   }
 
   &__logo-container {
-    padding-top: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,39 +33,58 @@
     }
   }
 
-  &__instructions {
-    padding: 0 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    &-main-text {
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 20px;
-      text-align: center;
-    }
-
-    &-auxiliary-text {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: center;
-    }
-  }
-
   &__form {
-    padding: 16px 24px;
+    padding: 0 24px;
     display: flex;
     gap: 32px;
     flex-direction: column;
-    height: 100%;
+
+    .min-responsive(@extra-large, {
+      min-height: 80%;
+    });
+
+    &__instructions {
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &-main-text {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      &-auxiliary-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__image {
+    width: 75%;
+    height: 100vh;
+    display: none;
+    background-size: cover;
+    background-image: url("../../../assets/images/loginImage.png");
+
+    .min-responsive(@medium, {
+      display: block;
+    });
   }
 }
 
 .button-container {
   display: flex;
   justify-content: center;
+
+  .min-responsive(@extra-large, {
+    margin-top: 32px;
+  });
 }
 
 .forgot-password-container {
