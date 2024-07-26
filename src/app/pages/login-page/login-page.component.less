@@ -1,0 +1,72 @@
+@import "../../../styles/_variables.less";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  color: @gray-90;
+
+  &__container {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  &__logo-container {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &__instructions {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-main-text {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    &-auxiliary-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;
+    }
+  }
+
+  &__form {
+    padding: 16px 24px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.app-version {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
