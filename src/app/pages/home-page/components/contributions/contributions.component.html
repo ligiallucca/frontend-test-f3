@@ -1,0 +1,26 @@
+<div class="contributions">
+  <h6 class="contributions__title">Total em Contribuições</h6>
+  <h5 class="contributions__value">R$ 999.999,99</h5>
+  <div class="contributions__chart-container" id="chart-container">
+    <p-chart
+      type="doughnut"
+      [data]="data"
+      [options]="options"
+      width="250"
+      height="250"
+      class="custom-chart"
+    />
+  </div>
+  <div class="contributions__cards-container">
+    <app-contributions-card
+      cardTitle="Contribuição Mensal"
+      contributionValue="500"
+      salaryPercentValue="5"
+    ></app-contributions-card>
+    <app-contributions-card
+      cardTitle="Contribuição Voluntária"
+      contributionValue="500"
+    ></app-contributions-card>
+  </div>
+  <button pButton class="primary-button">Incluir Contribuição</button>
+</div>

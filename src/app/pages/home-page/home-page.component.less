@@ -1,0 +1,26 @@
+@import "../../../styles/_variables.less";
+@import "../../../styles/_mixins.less";
+
+.home {
+  &__header {
+    display: none;
+
+    .min-responsive(@large, {
+      display: block;
+    });
+  }
+  &__navigation {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    color: @gray-90;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid @gray-40;
+  }
+}
