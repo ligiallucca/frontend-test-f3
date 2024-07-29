@@ -1,0 +1,27 @@
+@import "../../../../../styles/_variables.less";
+
+.home-header {
+  padding: 24px;
+  background-color: @secondary-color;
+  display: flex;
+  justify-content: space-around;
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__navigation {
+    color: @white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    &__link {
+      &__icon {
+        line-height: 0;
+      }
+    }
+  }
+}
