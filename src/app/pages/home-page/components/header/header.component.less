@@ -3,24 +3,29 @@
 .home-header {
   padding: 24px;
   background-color: @secondary-color;
-  display: flex;
-  justify-content: space-around;
 
-  &__avatar {
-    width: 32px;
-    height: 32px;
-  }
-
-  &__navigation {
-    color: @white;
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1500px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    justify-content: space-between;
 
-    &__link {
-      &__icon {
-        line-height: 0;
+    &__avatar {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__navigation {
+      color: @white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      &__link {
+        &__icon {
+          line-height: 0;
+        }
       }
     }
   }

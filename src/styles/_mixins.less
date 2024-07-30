@@ -36,6 +36,14 @@
   }
 }
 
+.custom-icon(@background-url) {
+  background: url(@background-url) no-repeat center center;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+}
+
 .min-responsive(@min-width; @rules) {
   @media (min-width: @min-width) {
     @rules();

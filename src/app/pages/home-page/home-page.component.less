@@ -1,0 +1,71 @@
+@import "../../../styles/_variables.less";
+@import "../../../styles/_mixins.less";
+
+.home {
+  &__header {
+    display: none;
+
+    .min-responsive(@large, {
+      display: block;
+    });
+  }
+
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    &__navigation {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding: 16px;
+      gap: 8px;
+      color: @gray-90;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid @gray-40;
+    }
+
+    &__wrapper {
+      display: flex;
+      &__navigation {
+        min-width: 500px;
+        display: none;
+        padding-top: 16px;
+
+        .min-responsive(@large, {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        });
+
+        &__icon {
+          width: 60px;
+          height: 60px;
+          font-size: 60px;
+          color: @primary-color;
+        }
+
+        &__title {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          margin-bottom: 8px;
+        }
+      }
+      &__contributions-container {
+        width: 100%;
+        padding: 16px;
+
+        .min-responsive(@large, {
+          padding: 16px 32px;
+        });
+      }
+    }
+  }
+}
