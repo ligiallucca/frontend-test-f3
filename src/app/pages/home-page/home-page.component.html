@@ -2,11 +2,28 @@
   <div class="home__header">
     <app-header></app-header>
   </div>
-  <nav class="home__navigation">
-    <i class="pi pi-arrow-left home__navigation__link__icon"></i>
-    <p class="home__navigation__link__section-name">Contribuições</p>
-  </nav>
-  <div class="home__contributions__container">
-    <app-contributions></app-contributions>
-  </div>
+  <main class="home__main-container">
+    <nav class="home__main-container__navigation">
+      <i class="pi pi-arrow-left home__navigation__link__icon"></i>
+      <p class="home__navigation__link__section-name">Contribuições</p>
+    </nav>
+
+    <div class="home__main-container__wrapper">
+      <div class="home__main-container__wrapper__navigation">
+        <i
+          class="pi pi-id-card home__main-container__wrapper__navigation__icon"
+        ></i>
+        <h2 class="home__main-container__wrapper__navigation__title">
+          Meu plano
+        </h2>
+        <h2 class="home__main-container__wrapper__navigation__subtitle">
+          O que você quer fazer?
+        </h2>
+        <app-navigation-menu></app-navigation-menu>
+      </div>
+      <div class="home__main-container__wrapper__contributions-container">
+        <app-contributions></app-contributions>
+      </div>
+    </div>
+  </main>
 </main>

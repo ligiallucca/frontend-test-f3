@@ -1,0 +1,29 @@
+@import "../../../../../styles/_variables.less";
+
+.navigation {
+  width: 100%;
+  min-width: 400px;
+  padding: 10px;
+}
+
+:host ::ng-deep {
+  .p-menu {
+    background-color: transparent;
+    width: 100%;
+    min-width: 400px;
+
+    .p-menuitem-link {
+      color: @gray-90;
+      padding: 8px 16px;
+      border-bottom: 1px solid @gray-40;
+
+      .p-menuitem-icon {
+        margin-right: 8px;
+      }
+
+      .p-menuitem-text {
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
 import { HeaderModule } from './components/header/header.module';
 import { ContributionsModule } from './components/contributions/contributions.module';
-import { ContributionsCardModule } from './components/contributions-card/contributions-card.module';
+import { NavigationMenuModule } from './components/navigation-menu/navigation-menu.module';
 
 @NgModule({
   declarations: [HomePageComponent],
@@ -11,7 +11,7 @@ import { ContributionsCardModule } from './components/contributions-card/contrib
     CommonModule,
     HeaderModule,
     ContributionsModule,
-    ContributionsCardModule,
+    NavigationMenuModule,
   ],
   exports: [HomePageComponent],
 })
